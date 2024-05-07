@@ -1,0 +1,71 @@
+.header {
+    display: flex;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.left-section {
+    background-color: #6B705C; 
+    flex: 1; 
+    padding: 20px;
+}
+
+.right-section {
+    background-color: #3B5A42; 
+    flex: 4; 
+    padding: 20px;
+}
+.footer {
+    background-color: #334E41; 
+    color: white;
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.content{
+    height: 500px;
+    margin-left: 100px;
+    margin-right: 100px;
+    background-color: #DCD7CB;
+    display: flex;
+}
+
+.left-images {
+    display: flex;
+    flex-direction: column;
+}
+
+.left-images1 {
+   padding-left: 60px;
+   padding-top:20px ;
+   width: 500px;
+   height: 150px;
+}
+
+.left-images2 {
+    padding-left: 60px;
+    padding-top:10px ;
+    width: 500px;
+    height: 150px;
+ }
+
+.right-image {
+    width: 305px;
+    height: 305px;
+    padding-left:30px;
+    padding-top: 20px;
+}
+
+.squares {
+    display: flex; /* 정사각형들을 가로로 정렬 */
+}
+
+.square {
+    flex: 1; /* 동일한 너비로 설정 */
+    padding-top: 30px; /* 위쪽 간격 설정 */
+    background-color: #A1B189;
+    margin-right: 10px; /* 정사각형 간격 설정 */
+}
+
+

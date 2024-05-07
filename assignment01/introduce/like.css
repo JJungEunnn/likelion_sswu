@@ -1,0 +1,91 @@
+@font-face {
+    font-family: "Pretendard-Regular";
+    src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+      format("woff");
+    font-weight: 500;
+    font-style: normal;
+  }
+  .black-han sans-regular {
+    font-family: "Black Han Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  * {
+    font-family: "Black Han Sans", sans-serif;
+  }
+  body {
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  header {
+    background-color: #96bbe4;
+    justify-content: space-between; /* 포트폴리오와 About, Goal을 좌우로 정렬 */
+    align-items: center; /* 수직 가운데 정렬 */
+    width: 100%;
+  }
+  .header-r {
+    display: flex;
+    gap: 50px;
+    h1 {
+      margin-right: 2rem;
+      margin-left: 300px; 
+    }
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(254, 254, 254);
+  }
+  .big-head {
+    height: 100px;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin-left: 3rem;
+    margin-right: 2rem;
+  }
+  .big-head > h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 2rem;
+  }
+  .main-page {
+    text-align: center;
+    margin: 0 auto;
+  }
+  .introduce_text > p {
+    color: #4492c9;
+    font-family: "Black Han Sans", sans-serif;
+    margin-top: 3rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+    line-height: 0.15em; 
+  }
+  .emphasize {
+    font-family: "Black Han Sans", sans-serif;
+    color: white;
+    text-shadow: 2px 2px 0 #96bbe4, 1px -1px 0 #96bbe4, -1px 1px 0 #96bbe4,
+      1px 1px 0 #96bbe4;
+  }
+  img {
+    width: 12rem;
+    border-radius: 20px;
+    margin-bottom: 120px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  footer {
+    background-color: #96bbe4;
+    color: white;
+    .right{ text-align : right };
+    padding: 1em;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+  }
+  footer > p {
+    font-family: "Pretendard-Regular";
+    font-weight: 600;
+  }

@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    display: flex;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.left-section {
+    background-color: #EEEEE9; 
+    flex: 1; 
+    padding: 20px;
+}
+
+.right-section {
+    background-color: #D6CCC2; 
+    flex: 4; 
+    padding: 20px;
+}
+
+.top-content {
+    background-color: #F5ECE1; 
+    height: 300px;
+    
+    
+}
+
+.bottom-content {
+    display: flex; 
+    
+}
+
+.left-bottom-content, .right-bottom-content {
+    flex: 1;
+    padding: 100px;
+}
+
+.left-bottom-content {
+    background-color: #E4D6CA; 
+}
+
+.right-bottom-content {
+    background-color: #D5BEB1; 
+}
+.container {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.header, .content {
+    flex: 1; /* 또는 grid 속성 사용 */
+}
+
+.footer {
+    background-color: #D6CCC2; 
+    color: white;
+    padding: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
