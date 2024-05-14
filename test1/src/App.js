@@ -1,17 +1,17 @@
-import React, {Component} from "react";
-import Header from "./component/Header";
-import Main from "./component/Main";
-import Footer from "./component/Footer";
+import React from 'react'
+import { BrowserRouter, Route, Routes} from 'react-router-dom'
+import Button from './components/Button'
+import Write from './components/Write'
 
-function App()
-{
-  return(
-    <div>
-      <Header />
-      <Main myName="김정은"/>
-      <Footer />
-    </div>
-  );
+const App = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Button />} />
+        <Route path='/write' element={<Write />} />
+      </Routes>
+    </BrowserRouter>
+  )
 }
 
-export default App;
+export default App
