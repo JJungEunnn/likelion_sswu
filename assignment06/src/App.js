@@ -2,7 +2,7 @@ import './App.css';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
 
-const URL = "http://apis.data.go.kr/1360000/WthrWrnInfoService"; 
+const URL = "http://apis.data.go.kr/1360000/WthrWrnInfoService/getWthrWrnList"; 
 
 function App() {
   const [data, setData] = useState(null);
@@ -15,7 +15,7 @@ function App() {
       setData(null);
       setLoading(true);
 
-      const response = await axios.get(URL="http://apis.data.go.kr/1360000/WthrWrnInfoService", {
+      const response = await axios.get(URL, {
         params: {
           serviceKey: process.env.REACT_APP_API_KEY,
           numOfRows: 1,
@@ -41,11 +41,14 @@ function App() {
 
   return (
     <div className="App">
-      <p>병원명 : { data.response.body.items.item.yadmNm }</p>
-      <p>주소 : { data.response.body.items.item.addr }</p>
-      <p>전화번호 : { data.response.body.items.item.telno }</p>
-      <p>RAT(신속항원검사) 가능 여부 : { data.response.body.items.item.ratPsblYn }</p>
-      <p>PCR 가능 여부 : { data.response.body.items.item.pcrPsblYn }</p>
+      {data.response.body.items.item.map((item, index) => (
+        <div key={index}>
+          <p>제목: {item.title}</p>
+          <p>관측소 ID: {item.stnId}</p>
+          <p>발표 시간: {item.tmFc}</p>
+          <p>순번: {item.tmSeq}</p>
+        </div>
+      ))}
     </div>
   );
 }
