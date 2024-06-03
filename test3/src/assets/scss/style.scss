@@ -1,0 +1,27 @@
+body {
+    background-color: beige;
+    overflow: hidden;
+    
+}
+*{
+    box-sizing: border-box;
+}
+
+.write {
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+
+    >div{
+        background-color: #fff;
+        width: 1000px;
+        height: 80vh;
+        padding: 30px;
+        border-radius: 20px;
+
+        input{
+            border: 2px solid #fff;
+        }
+    }
+    
+}
