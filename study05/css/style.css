@@ -29,6 +29,7 @@ header{
     float: right;
     width: 800px;
     height: 350px;
+    overflow: hidden;
 }
 .slidelist{
     width: 2400px;
@@ -48,6 +49,7 @@ header{
     background-color: rgba(40,40,40,0.5);
     margin-left: 200px;
     margin-top: 150px;
+    
 }
 .contents{
     float: right;
@@ -73,7 +75,7 @@ footer{
     left: 10px;
     position: absolute;
     text-align: center;
-    z-index: 1;
+    z-index: 1; /*z-index: 1;을 갖는 요소는 z-index 속성이 지정되지 않은 다른 요소들보다 앞쪽에 위치*/
 }
 .navi>li{
     float: left;
@@ -187,7 +189,7 @@ footer{
     text-align: center;
     font-weight: bold;
     position: absolute;
-    background-color: rgb(255,255,255,0.5);
+    background-color: rgba(255,255,255,0.5);
     margin-top: 85px;
     margin-left: 50px;
 }
