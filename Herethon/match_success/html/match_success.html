@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="../css/matching_success">
+</head>
+<body>
+    <section class="login-form">
+        <h1>소심한 고구마 러너님의<p>맞춤 MZ 티쳐를 소개해드려요.</p></h1>
+        <h6>신청하기 버튼을 클릭하면 1:1 매칭에 성공해요.</h6>
+        <form action="">
+            <div class="container" id="profile-image">
+                <div class="box"><img src="../img/Sun.png" alt="이미지 1">
+                    <p1>춤추는 알파벳</p1>
+                </div>
+            <div class="btn-area">
+                <button id="btn" type="submit">다음으로</button>
+            </div>
+        </form>
+        
+    </section>
+
+    <script src="../Js/script.js">       
+        let id = $('#id');
+        let pw = $('#pw');
+        let btn = $('#btn');
+        
+        $(btn).on('click', function() {
+            if($(id).val() == "") {
+                $(id).next('label').addClass('warning');
+                setTimeout(function() {
+                    $('label').removeClass('warning');
+                }, 1500);
+            }
+            else if($(pw).val() == "") {
+                $(pw).next('label').addClass('warning');
+                setTimeout(function() {
+                    $('label').removeClass('warning');
+                }, 1500);
+            }
+        });
+    </script>    
+</body>
+</html>
