@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>profile</title>
+    <link rel="stylesheet" href="../Css/profile.css">
+</head>
+<body>
+    <section class="login-form">
+        <h5>MZ의 스킬에 오신 것을 환영합니다.</h5>
+        <h1>티쳐와 러너의 1:1 매칭을 위한<p>정보를 입력해주세요.</p></h1>
+        <form action="">
+            <h4>등록하고자 하는 유형을 선택해주세요.</h4>
+            <div class="container" id="profile-image">
+                <div class="box"><img src="../img/Graduated.png" alt="이미지 1"></div>
+                <div class="box"><img src="../img/Pencil.png" alt="이미지 2"></div>
+            </div>
+            <h8>이미 가입한 계정이 있다면?</h8>
+            <div class="btn-area">
+                <button id="btn" type="submit">다음으로</button>
+            </div>
+        </form>
+    </section>
+
+    <script src="../Js/script.js">       
+        let id = $('#id');
+        let pw = $('#pw');
+        let btn = $('#btn');
+        
+        $(btn).on('click', function() {
+            if($(id).val() == "") {
+                $(id).next('label').addClass('warning');
+                setTimeout(function() {
+                    $('label').removeClass('warning');
+                }, 1500);
+            }
+            else if($(pw).val() == "") {
+                $(pw).next('label').addClass('warning');
+                setTimeout(function() {
+                    $('label').removeClass('warning');
+                }, 1500);
+            }
+        });
+    </script>    
+</body>
+</html>
