@@ -1,128 +1,115 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
 body {
-  font-family: 'pretendard';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background-color: #FBF8FE;
-}
-
-.login-form h1 {
-  font-size: 22px;
-  text-align: left;
-  margin-bottom: 52px;
-  color: #454347;
-  line-height: 160%;
-}
-
-.int-area {
-  width: 400px;
-  position: relative;
-  margin-top: 40px;
-  color: #454347;
-  margin-bottom: 20px;
-}
-
-.int-area:first-child {
-  margin-top: 0;
-}
-
-.int-area input {
-  width: 100%;
-  padding: 20px 10px 10px;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #CDCAD0;
-  font-size: 18px;
-  outline: none;
-}
-
-.int-area label {
-  position: absolute;
-  left: 10px;
-  top: 15px;
-  font-size: 18px;
-  transition: top 0.5s ease;
-  margin-bottom: 5px;
-}
-
-.int-area label.warning {
-  color: red !important;
-  animation: warning 0.3s ease;
-  animation-iteration-count: 3;
-}
-
-@keyframes warning {
-  0% {
-    transform: translateX(-8px);
-  }
-  25% {
-    transform: translateX(8px);
-  }
-  50% {
-    transform: translateX(-8px);
-  }
-  75% {
-    transform: translateX(8px);
-  }
-}
-
-.int-area input:focus + label,
-.int-area input:valid + label {
-  top: -2px;
-  font-size: 13px;
-  color: #454347;
-}
-
-.btn-area {
-  margin-top: 80px;
-}
-
-.btn-area button {
-  width: 100%;
-  height: 50px;
-  margin: 0px 10px;
-  color: #fff;
-  background: #8520EA;
-  border: none;
-  border-radius: 10px;
-  font-size: 15px;
-  cursor: pointer;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #F5F5F5;
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 100px;
-}
-
-.box {
-    width: calc(20% - 30px);
-    height: 55px;
-    border: 2px solid transparent;
+    background-color: white;
+    padding: 20px;
     border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 320px;
+}
+
+.welcome-text {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.sub-text {
+    color: #888;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.teacher-card {
+    background-color: #FAFAFA;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+}
+
+.crown {
+    left: unset;
+    right: -10px;
+    top: -10px;
+}
+
+.icon span {
+    font-size: 24px;
+}
+
+.teacher-card h2 {
+    margin: 20px 0 10px;
+    font-size: 18px;
+}
+
+.teacher-card p {
+    margin: 5px 0;
+    font-size: 14px;
+    color: #666;
+}
+
+.buttons {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.btn {
+    background-color: #E0E0E0;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 12px;
     cursor: pointer;
-    transition: border-color 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.box img {
-    width: 39px;
-    height: 36px;
-   
+.btn.positive {
+    background-color: #FFECB3;
 }
 
-.box.selected {
-    border-color: #8520EA;
+.btn.charge {
+    background-color: #FFCDD2;
+}
+
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.nav-btn {
+    background: none;
+    border: none;
+    color: purple;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.match-button {
+    background-color: purple;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-top: 20px;
 }
