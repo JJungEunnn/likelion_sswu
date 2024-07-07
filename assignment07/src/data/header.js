@@ -14,7 +14,7 @@ import { AiOutlineInstagram } from "react-icons/ai";
 
 export const headerMenus = [
     {
-        title: "웹스토리보이",
+        title: "멋쟁이 사자처럼",
         icon: <CiBaseball />,
         src: "/"
     },
@@ -57,8 +57,8 @@ export const headerMenus = [
 
 export const searchKeyword = [
     {
-        title: "webstoryboy",
-        src: "/search/webstoryboy"
+        title: "likelion",
+        src: "/search/likelion"
     },
     {
         title: "HTML",
@@ -77,22 +77,6 @@ export const searchKeyword = [
         src: "/search/react.js"
     },
     {
-        title: "Vue.js",
-        src: "/search/vue.js"
-    },
-    {
-        title: "Next.js",
-        src: "/search/next.js"
-    },
-    {
-        title: "Node.js",
-        src: "/search/node.js"
-    },
-    {
-        title: "SQL",
-        src: "/search/sql"
-    },
-    {
         title: "portfolio",
         src: "/search/React Portfolio"
     },
@@ -105,22 +89,22 @@ export const searchKeyword = [
 export const snsLink = [
     {
         title: "github",
-        url: "https://github.com/webstoryboy",
+        url: "https://github.com/JJungEunnn",
         icon: <AiFillGithub />
     },
     {
         title: "youtube",
-        url: "https://www.youtube.com/webstoryboy",
+        url: "https://www.youtube.com",
         icon: <AiFillYoutube />
     },
     {
         title: "codepen",
-        url: "https://codepen.io/webstoryboy",
+        url: "https://codepen.io",
         icon: <AiOutlineCodepen />
     },
     {
         title: "instagram",
-        url: "https://www.instagram.com/webstoryboy",
+        url: "https://www.instagram.com/zyozee_suriii/?hl=ko",
         icon: <AiOutlineInstagram />
     },
 ]
