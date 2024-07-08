@@ -24,32 +24,27 @@ export const headerMenus = [
         src: "/today"
     },
     {
-        title: "추천 개발자",
+        title: "추천 플레이어",
         icon: <CiCoins1 />,
         src: "/developer"
     },
     {
-        title: "웹디자인기능사",
-        icon: <CiBoxes />,
+        title: "두산 베어스",
+        icon: <CiBullhorn />,
         src: "/webd"
     },
     {
-        title: "웹표준 사이트",
-        icon: <CiBullhorn />,
-        src: "/website"
-    },
-    {
-        title: "GSAP Parallax",
+        title: "2024 올스타",
         icon: <CiCoffeeCup />,
         src: "/gsap"
     },
     {
-        title: "포트폴리오 사이트",
+        title: "portfolio",
         icon: <CiDumbbell />,
         src: "/port"
     },
     {
-        title: "유튜브 클론 사이트",
+        title: "youtube clone",
         icon: <CiFries />,
         src: "/youtube"
     },

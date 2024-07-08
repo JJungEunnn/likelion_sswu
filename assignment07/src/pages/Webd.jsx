@@ -1,12 +1,18 @@
 import React from 'react'
 import Main from '../components/section/Main'
+import { webdText } from '../data/webd'
+import VideoCard from '../components/video/VideoCard'
 
 const Webd = () => {
     return (
         <Main 
-            title = "웹디자인 기능사"
-            description="웹디자인 기능사 튜토리얼 강의입니다.">
+        
+            title = "베어스 티비"
+            description="두산 베어스입니다.">
             Webd
+            <div className="video__inner">
+                    <VideoCard videos={webdText} />
+            </div>
         </Main>
     )
 }
