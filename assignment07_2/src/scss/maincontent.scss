@@ -40,4 +40,33 @@
     height: 560x;
     object-fit: cover;
   }
+
+  .feature-products {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    
+  }
+  
+  .feature-product {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 190%;
+  }
+  
+  .feature-product img {
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+  }
+
+  button{
+    border-radius: 20px;
+    padding: 12px 12px;
+    border-color: #C9C9C9;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
   

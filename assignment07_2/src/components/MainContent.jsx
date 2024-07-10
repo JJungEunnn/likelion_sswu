@@ -37,6 +37,8 @@ import img34 from '../img/maincontent/interun/interun04.png'
 import img35 from '../img/maincontent/interun/interun05.png'
 import img36 from '../img/maincontent/interun/interun06.png'
 import img37 from '../img/maincontent/interun/interun07.png'
+import feature1 from '../img/maincontent/feature/feature01.png'; 
+import feature2 from '../img/maincontent/feature/feature02.png'; 
 
 
 import { useState } from 'react';
@@ -124,14 +126,13 @@ const MainContent = () => {
         <h2>기획전</h2>
         <div className="feature-products">
           <div className="feature-product">
-            <img src="/path/to/axilus3.png" alt="AXILUS 3" />
-            <h3>French Open AXILUS 3</h3>
+            <img src={feature1} alt="AXILUS 3" />
             <p>FILA CUSTOM STUDIO</p>
             <p>최상의 플레이를 위한 맞춤형 테니스화</p>
             <button>자세히 보기</button>
           </div>
           <div className="feature-product">
-            <img src="/path/to/pertex.png" alt="Pertex Life" />
+            <img src={feature2} alt="Pertex Life" />
             <h3>Pertex Life</h3>
             <p>힐라 페텍스 시리즈와 함께하는 페텍스 라이프</p>
             <button>자세히 보기</button>
