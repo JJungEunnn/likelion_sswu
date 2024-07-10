@@ -1,0 +1,59 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  .footer-left {
+    max-width: 60%;
+  }
+  
+  .footer-logo {
+    width: 100px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-links,
+  .footer-legal {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 20px 0;
+  }
+  
+  .footer-links li,
+  .footer-legal li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .footer-address {
+    font-size: 12px;
+    line-height: 1.6;
+  }
+  
+  .footer-right {
+    text-align: right;
+    max-width: 30%;
+  }
+  
+  .cs-center-button {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .footer-country {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+  
+  .footer-country span {
+    cursor: pointer;
+  }
+  
