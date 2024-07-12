@@ -3,7 +3,7 @@ import React from 'react';
 import Carousel from '../src/components/Carousel';
 import MainContent from '../src/components/MainContent';
 import Footer from '../src/components/Footer';
-import Navbar from './components/Navbar';
+
 
 const App = () => (
   <div className="App">
@@ -11,7 +11,7 @@ const App = () => (
     {/* <Header /> */}
     <MainContent />
     <Footer />
-    <Navbar />
+    
   </div>
 );
 

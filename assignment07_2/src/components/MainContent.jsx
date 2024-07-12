@@ -39,6 +39,17 @@ import img36 from '../img/maincontent/interun/interun06.png'
 import img37 from '../img/maincontent/interun/interun07.png'
 import feature1 from '../img/maincontent/feature/feature01.png'; 
 import feature2 from '../img/maincontent/feature/feature02.png'; 
+import cameraicon from '../img/maincontent/camera/camera.svg';
+import camera1 from '../img/maincontent/camera/camera01.png';
+import camera2 from '../img/maincontent/camera/camera02.png';
+import camera3 from '../img/maincontent/camera/camera03.png';
+import camera4 from '../img/maincontent/camera/camera04.png';
+import camera5 from '../img/maincontent/camera/camera05.png';
+import camera6 from '../img/maincontent/camera/camera06.png';
+import camera7 from '../img/maincontent/camera/camera07.png';
+import camera8 from '../img/maincontent/camera/camera08.png';
+import camera9 from '../img/maincontent/camera/camera09.png';
+import camera10 from '../img/maincontent/camera/camera10.png';
 
 
 import { useState } from 'react';
@@ -95,6 +106,19 @@ const products = {
   ],
 };
 
+const cameraImages = [
+  camera1,
+  camera2,
+  camera3,
+  camera4,
+  camera5,
+  camera6,
+  camera7,
+  camera8,
+  camera9,
+  camera10,
+];
+
 const MainContent = () => {
     const [selectedTag, setSelectedTag] = useState(tags[0]);
   
@@ -137,6 +161,19 @@ const MainContent = () => {
             <p>힐라 페텍스 시리즈와 함께하는 페텍스 라이프</p>
             <button>자세히 보기</button>
           </div>
+        </div>
+      </div>
+      <div className="camera-section">
+        <h2>@fila_korea</h2>
+        <div className="camera-icon">
+          <img src={cameraicon} alt="Camera Icon" />
+        </div>
+        <div className="camera-images">
+          {cameraImages.map((img, index) => (
+            <div key={index} className="camera-image">
+              <img src={img} alt={`camera-${index}`} />
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -13,6 +13,7 @@ import header04 from '../img/carousel/header04.svg';
 import header05 from '../img/carousel/header05.svg';
 
 const images = [header01, header02, header03, header04, header05];
+
 const carousel = {
     header01: [
       { img: header01, explain:'24 NEW 인터런'}, 
