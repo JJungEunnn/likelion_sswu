@@ -1,0 +1,91 @@
+.promo-section {
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-top: 50px;
+
+  .promo-item {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    color: #000;
+
+    .promo-image {
+      margin-left: 40px;
+      width: 150px; /* Adjust as needed */
+      margin-right: 20px;
+      margin-bottom: 90px;
+    }
+
+    .promo-text {
+      margin-bottom: 15px;
+      margin-left: 20px;
+      h2 {
+        font-size: 35px;
+        font-weight: bold;
+      }
+
+      p {
+        margin-bottom: 10px;
+        font-weight: bold;
+        font-size: 30px;
+      }
+
+      .promo-link {
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 20px;
+        
+      }
+
+      .promo-link:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  .yellow-background {
+    background-color: #ffc107;
+  }
+
+  .gray-background {
+    background-color: #f5f5f5;
+  }
+}
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: left;
+    display: flex;
+  }
+  
+  .footer-logo-section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    width: 139px; /* 로고 크기 조정 */
+    height: 45;
+    margin-right: 40px;
+  }
+  
+  .footer-info {
+    padding-left: 40px;
+        border-left: 1px solid #444;
+        font-size: 14px;
+        color: #aaa;
+        line-height: 22px;
+  }
+  
+  .footer-info p {
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  

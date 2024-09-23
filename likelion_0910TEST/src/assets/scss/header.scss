@@ -1,0 +1,47 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 1px solid #e1dfdf;
+  }
+  
+  .logo-section {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+  }
+  
+  .logo-image {
+    width: 139px; /* 원하는 크기에 맞게 조정 가능 */
+    height: 45px;
+  }
+  .top{
+    display: flex;
+  }
+  .top ul{
+    font-size: 20px;
+    font-weight: 600;
+    color: #111;
+    padding-left: 50px;
+    line-height: 85px;
+    cursor: pointer;
+  }
+  .nav-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1920px;
+    list-style: none;
+    margin: 0;
+    padding: 0 auto;
+    height: 100%;
+  }
+  
+  .nav-menu li {
+    margin: 0 15px;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'pretendard', dotum, sans-serif;
+  }
