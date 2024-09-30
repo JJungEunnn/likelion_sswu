@@ -1,0 +1,21 @@
+.banner {
+    background-color: #6A6FB3;
+    width: 375px;
+    height: 50px;
+    overflow: hidden; /* 이미지가 배너를 벗어나지 않도록 처리 */
+}
+
+.banner-logo {
+    width: 120px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin-left: 125px;
+    margin-top: 10px;
+}
+
+.Slide01, .Slide02, .Slide03, .Slide04 {
+    max-width: 375px;
+    height: 100%;
+    object-fit: cover;  /* 이미지가 배너 크기에 맞춰서 잘리도록 설정 */
+}

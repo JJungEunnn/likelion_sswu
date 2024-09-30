@@ -1,0 +1,15 @@
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;  // Full screen height
+    width: 375px;
+    background-color: #f8f9fa;  // Light background color
+  }
+  
+  .loading-logo {
+    width: 150px;  // Adjust the size of the logo
+    height: auto;
+  }
+  
