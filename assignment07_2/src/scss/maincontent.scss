@@ -1,0 +1,110 @@
+.main-content {
+    // text-align: center;
+    padding: 20px;
+  }
+  .main-content h2 {
+    text-align: center;
+  }
+  .tags {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .tag {
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 18px;
+    color:#898989;
+    font-weight: bold;
+  }
+  
+  .tag.active {
+    font-weight: bold;
+    color: black;
+  }
+  
+  .products {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    
+  }
+  
+  .product {
+    margin: 10px;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .product img {
+    width: 450px;
+    height: 560x;
+    object-fit: cover;
+  }
+  .feature-section h2{
+    text-align: center;
+  }
+  .feature-products {
+    display: flex;
+    justify-content: center;
+    overflow-x: auto;
+    
+  }
+  
+  .feature-product {
+    margin: 10px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 190%;
+  }
+  
+  .feature-product img {
+    width: 800px;
+    height: 800px;
+    object-fit: cover;
+  }
+
+  button{
+    border-radius: 20px;
+    padding: 12px 12px;
+    border-color: #C9C9C9;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+  }
+
+  .camera-section {
+    margin: 40px 0;
+  }
+  
+  .camera-section h2{
+    text-align: right;
+  }
+  .camera-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .camera-image {
+    margin: 5px;
+    max-width: 20%;
+    cursor: pointer;
+    
+  }
+  
+  .camera-image img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+  }
+  .camera-icon {
+    position: absolute;
+    top: 2630px;
+    left: 10;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+  }
+  

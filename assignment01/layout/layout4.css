@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    height:100px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.left-section {
+    background-color: #54D8DC; 
+    flex: 1; 
+    padding: 20px;
+}
+
+.right-section {
+    background-color: #86DADC; 
+    flex: 4; 
+    padding: 20px;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between; 
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.image-wrapper {
+    flex: 1;
+}
+
+.image-wrapper img {
+    width: 100%; 
+    height: auto; 
+}
+.footer {
+    display: flex;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+
+.footer-section1 {
+    background-color: #FFC0CB; /* 첫 번째 footer 색상 */
+    flex: 1; 
+    padding: 20px;
+}
+
+.footer-section2 {
+    flex: 4;
+    .sub-footer1 {
+        background-color: #FECECE; /* 분홍색 */
+        flex: 1; /* 동일한 너비로 분배 */
+        padding: 20px;
+        height:25px;
+    }
+    
+    .sub-footer2 {
+        background-color: #FDB2B5; /* 파란색 */
+        flex: 1; /* 동일한 너비로 분배 */
+        padding: 20px;
+        height:25px;
+    }
+}
+

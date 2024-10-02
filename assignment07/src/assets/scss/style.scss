@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+// setting
+// @import "setting/fonts";
+@import "setting/vars";
+@debug "vars.scss 로드됨";
+@import "setting/reset";
+@debug "reset.scss 로드됨";
+@import "setting/mixin";
+@debug "mixin.scss 로드됨";
+@import "setting/common";
+@debug "common.scss 로드됨";
+
+// section
+@import "section/layout";
+@debug "layout.scss 로드됨";
+@import "section/header";
+@debug "header.scss 로드됨";
+@import "section/search";
+@debug "search.scss 로드됨";
+@import "section/today";
+@debug "today.scss 로드됨";
+@import "section/developer";
+@debug "developer.scss 로드됨";
+@import "section/video";
+@debug "video.scss 로드됨";
+@import "section/swiper";
+@debug "swiper.scss 로드됨";
+@import "section/channel";
+@debug "channel.scss 로드됨";
+
