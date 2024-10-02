@@ -1,0 +1,14 @@
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;  /* Full screen height */
+  width: 375px;   /* 고정된 너비 */
+  background-color: #f8f9fa;  /* Light background color */
+  margin: 0 auto; /* 수평 중앙 정렬 */
+}
+
+.loading-logo {
+  width: 150px;  /* Adjust the size of the logo */
+  height: auto;
+}

@@ -1,0 +1,55 @@
+/* Content01.css */
+.content01 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.content01-text {
+  max-width: 40%;
+}
+
+.content01-swiper {
+  max-width: 60%;
+}
+
+
+h1 {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 120px;
+  line-height: 70px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.background-image {
+  width: 100%;
+  /* 배경 이미지를 전체 크기로 설정 */
+  height: auto;
+}
+
+.overlay-image {
+  position: absolute;
+  bottom: 20px;
+  /* 아래쪽에서 10px 떨어짐 */
+  left: 20px;
+  /* 왼쪽에서 10px 떨어짐 */
+  width: 230px;
+  /* 이미지의 크기 조정 */
+  height: auto;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  display: none;
+}

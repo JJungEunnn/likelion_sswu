@@ -1,0 +1,75 @@
+/* 배너 스타일 */
+.banner {
+    background-color: #6A6FB3;
+    width: 375px;
+    height: 50px;
+    margin: 0 auto;
+    overflow: hidden; /* 이미지가 배너를 벗어나지 않도록 처리 */
+}
+
+/* 배너 로고 스타일 */
+.banner-logo {
+    width: 120px;
+    height: auto;
+    text-align: center;
+    align-items: center;
+    margin-left: 125px;
+    margin-top: 10px;
+}
+
+/* 슬라이드 컨테이너 */
+.slider-container {
+    width: 375px;
+    height: 140px;
+    margin: 0 auto;
+  
+    img {
+      width: 100%;
+      height: 120px;
+    }
+
+  }
+  .slider-container {
+    .swiper-pagination-bullet {
+      background-color: #D4C4DB; // 기본 도트 색상
+      opacity: 1;  // 기본 상태에서 불투명하게 설정 (default가 반투명일 수 있음)
+      width: 8px;
+      height: 8px;
+    }
+  
+    .swiper-pagination-bullet-active {
+      background-color: #FFFFFF; // 활성화된 도트 색상
+    }
+  }
+  .nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;  // 배경 색상 설정
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  .nav-items {
+    display: flex;
+    justify-content: space-around;
+    width: 300px;  // 네비게이션 바 아이템의 전체 너비 설정
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    cursor: pointer;
+  }
+  
+  .nav-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .nav-icon {
+    font-size: 24px;
+    color: #6A6FB3;  // 아이콘 색상 설정
+    transition: color 0.3s;
+  }
+  
