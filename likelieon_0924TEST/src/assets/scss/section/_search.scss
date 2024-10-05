@@ -1,0 +1,40 @@
+.search-wrap {
+    width: 100%;
+    margin: 20px auto;
+    margin: 0; /* 상단 여백 제거 */
+    padding: 0;
+    
+}
+.search-bar{
+    height: 100vh;
+    width: 375px;
+}
+.search-bar input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 10px;
+    background-color: #6A6FB3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.places-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.places-list li {
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #f1f1f1;
+    border-radius: 4px;
+}

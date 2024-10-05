@@ -28,9 +28,9 @@ const App = () => {
         <BrowserRouter>
             <Header />
             <Routes>
-                <Route path='/' element={<Main />} />
+                <Route path='/main' element={<Main />} />
                 <Route path='/loading' element={<Loading />} />
-                <Route path='/like' element={<Like />} />
+                <Route path="/like" element={<Like />} />
                 <Route path='/search' element={<Search />} />
                 <Route path='/mypage' element={<Mypage />} />
             </Routes>
