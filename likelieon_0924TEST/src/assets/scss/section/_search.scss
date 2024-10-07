@@ -27,7 +27,7 @@ $input-padding: 10px;
       outline: none;
 
       &::placeholder {
-        color: #c4c4c4;
+        color: #6A6FB3;
       }
     }
 
@@ -67,17 +67,22 @@ $input-padding: 10px;
   }
 
   .popup-container {
-    position: fixed;
-    bottom: 0;
-    left: 0;
+    position: absolute;
+    bottom: -50%; // 시작 위치는 화면 밖 (아래)
+    left: 60;
     width: 375px;
     height: 50%;
     background-color: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
     align-items: flex-end;
+    transform: translateY(100%); // 처음에는 화면 아래에 위치
     transition: transform 0.3s ease-in-out;
     z-index: 10; // 팝업은 가장 높은 z-index 값으로 설정
+
+    &.active {
+      transform: translateY(0); // 활성화 시 팝업이 올라옴
+    }
 
     .popup {
       width: 375px;

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Slider from './Section/Slider';
 import searchIcon from '../assets/img/icon/search.svg'; // 검색 아이콘 경로
-
+import list from '../assets/img/icon/list.svg'
 const Search = () => {
     const mapContainer = useRef(null); // 지도를 표시할 div의 ref
     const mapRef = useRef(null); // 지도를 저장할 ref
@@ -101,7 +101,11 @@ const Search = () => {
                 className="map-container"
                 style={{ width: '375px', height: '375px', marginTop: '10px' }} // 지도의 크기 설정
             ></div>
-            <button className="list-button" onClick={() => setIsPopupVisible(true)}>목록보기</button>
+            <button className="list-button" onClick={() => setIsPopupVisible(true)}>
+                목록보기
+                <img src={list} alt="목록 아이콘" style={{ width: '20px', height: '20px', marginRight: '8px' }} />
+
+            </button>
 
             {/* 팝업 창 */}
             {isPopupVisible && (
