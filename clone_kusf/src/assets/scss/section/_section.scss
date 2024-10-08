@@ -1,0 +1,80 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #002C49;
+  padding: 10px 20px;
+  height: 70px; 
+}
+
+.header-logo img {
+  height: 70px; /* 로고 크기를 조정할 수 있습니다 */
+  margin-left: 130px;
+}
+
+.header-nav ul {
+  list-style: none;
+  display: flex;
+  margin-right: 80px;
+  padding: 0 30px;
+  float: left;
+  gap: 50px;
+  font-family: 'S-CoreDream-3Light';
+  font-weight: 700;
+  line-height: 3.7;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.header-nav li {
+  margin-right: 20px;
+  position: relative; /* 드롭다운 메뉴의 위치를 조정하기 위해 부모에 relative 설정 */
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.header-nav .dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* 드롭다운 메뉴 스타일 */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 200px;
+  z-index: 9999; /* z-index 값을 높게 설정 */
+}
+
+.dropdown-menu li {
+  padding: 10px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.dropdown-menu li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-menu a {
+  color: rgb(120, 120, 120);
+  text-decoration: none;
+  display: block;
+  font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+  color: #3c3c3c;
+}
+.header-nav .dropdown:hover .dropdown-menu {
+  display: block; /* hover 상태에서만 드롭다운이 표시됨 */
+}
+
