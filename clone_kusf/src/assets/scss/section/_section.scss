@@ -5,11 +5,11 @@
   align-items: center;
   background-color: #002C49;
   padding: 10px 20px;
-  height: 70px; 
+  height: 70px;
 }
 
 .header-logo img {
-  height: 70px; /* 로고 크기를 조정할 수 있습니다 */
+  height: 70px; /* Adjust logo size */
   margin-left: 130px;
 }
 
@@ -18,18 +18,17 @@
   display: flex;
   margin-right: 80px;
   padding: 0 30px;
-  float: left;
   gap: 50px;
   font-family: 'S-CoreDream-3Light';
   font-weight: 700;
   line-height: 3.7;
   cursor: pointer;
-  text-decoration: none;
+
 }
 
 .header-nav li {
-  margin-right: 20px;
-  position: relative; /* 드롭다운 메뉴의 위치를 조정하기 위해 부모에 relative 설정 */
+  position: relative; /* Ensure the dropdown positions relative to the parent */
+  
 }
 
 .header-nav a {
@@ -38,26 +37,24 @@
   font-size: 18px;
 }
 
-.header-nav .dropdown:hover .dropdown-menu {
-  display: block;
-}
 
-/* 드롭다운 메뉴 스타일 */
 .dropdown-menu {
-  display: none;
+  // display: none;
   position: absolute;
-  top: 100%;
-  left: 0;
+    left: 0;
+    right: 0;
+    text-align: left;
   background-color: white;
   border: 1px solid #ddd;
   width: 200px;
-  z-index: 9999; /* z-index 값을 높게 설정 */
+  z-index: 9999;
 }
 
 .dropdown-menu li {
   padding: 10px;
   background-color: white;
   border-bottom: 1px solid #ddd;
+  
 }
 
 .dropdown-menu li:hover {
@@ -65,16 +62,39 @@
 }
 
 .dropdown-menu a {
-  color: rgb(120, 120, 120);
+  color: rgb(106, 106, 106);
   text-decoration: none;
-  display: block;
+  display: flex;
   font-size: 14px;
+  transition: all ease-out 0.25s;
 }
 
 .dropdown-menu a:hover {
   color: #3c3c3c;
 }
-.header-nav .dropdown:hover .dropdown-menu {
-  display: block; /* hover 상태에서만 드롭다운이 표시됨 */
-}
 
+.slider-container {
+  width: 375px;
+  height: 140px;
+  margin: 0 auto;
+  padding: 0;
+
+
+  img {
+    width: 100%;
+    height: 120px;
+  }
+
+}
+.slider-container {
+  .swiper-pagination-bullet {
+    background-color: #D4C4DB; // 기본 도트 색상
+    opacity: 1;  // 기본 상태에서 불투명하게 설정 (default가 반투명일 수 있음)
+    width: 8px;
+    height: 8px;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #FFFFFF; // 활성화된 도트 색상
+  }
+}
