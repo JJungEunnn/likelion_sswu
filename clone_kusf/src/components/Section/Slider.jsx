@@ -27,10 +27,16 @@ const Slider = () => {
                     <img src="https://www.kusf.or.kr/UploadDir/main/20240819175912692402.jpg"alt="Slide 2" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://www.kusf.or.kr/UploadDir/main/20240819175912692403.jpg" alt="Slide 3" />
+                    <img src="https://kusf.or.kr/UploadDir/main/2024032208234830921.jpg" alt="Slide 3" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="https://www.kusf.or.kr/UploadDir/main/20240819175912692404.jpg" alt="Slide 4" />
+                    <img src="https://www.kusf.or.kr/UploadDir/main/20240819174654888109.jpg" alt="Slide 4" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src="https://www.kusf.or.kr/UploadDir/main/20240531134336104778.jpg" alt="Slide 5" />
+                </SwiperSlide>
+                <SwiperSlide>
+                    <img src="https://www.kusf.or.kr/UploadDir/main/20240321120740535733.png" alt="Slide 4" />
                 </SwiperSlide>
             </Swiper>
         </div>

@@ -1,0 +1,214 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 1580px;
+    margin: 0 auto;
+    background-color: #e7e7e7;
+
+    .banner-section {
+        display: flex;
+        gap: 10px;
+
+        .banner-item {
+            flex: 1;
+            position: relative;
+
+            .img-wrapper {
+                position: relative;
+                width: 100%;
+
+                img {
+                    width: 100%;
+                    border-radius: 10px;
+                }
+
+                .overlay {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    background: rgba(0, 0, 0, 0.5);
+                    color: #fff;
+                    padding: 10px;
+                    text-align: center;
+                    font-size: 16px;
+                    border-radius: 0 0 10px 10px;
+
+                    strong {
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+
+    .content-section {
+        display: flex;
+        width: 100%; // 화면 너비에 맞게 설정
+        gap: 20px; // notice-section과 news-section 사이의 간격
+
+        .news-section {
+            flex: 2; // 전체 너비의 2/3 정도를 차지하도록 설정
+            box-sizing: border-box;
+            background-color: #e7e7e7;
+            overflow: hidden;
+            border-radius: 12px 0 0 12px;
+
+            h2 {
+                font-size: 24px;
+                margin-bottom: 15px;
+                font-weight: bold;
+            }
+
+            .news-items {
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+
+                .news-item {
+                    width: calc(33.333% - 10px); // 한 줄에 3개씩 배치
+                    background-color: #ffffff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    text-align: left;
+                    box-sizing: border-box;
+
+                    img {
+                        width: 100%;
+                        border-radius: 10px 10px 0 0;
+                        max-height: 100%;
+                    }
+
+                    p {
+                        width: 100%;
+                        line-height: 1.2;
+                        padding: 5px;
+                        font-size: 15px;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+
+        .notice-section {
+            flex: 1; // 전체 너비의 1/3 정도를 차지하도록 설정
+            box-sizing: border-box;
+            padding: 20px;
+            margin-top: 65px;
+            background: #fff;
+            border-radius: 12px;
+
+            .notice-header {
+                display: flex;
+                align-items: left;
+                justify-content: space-between;
+                margin-bottom: 15px;
+                padding-bottom: 20px;
+                border-bottom: 1px solid #c5c5c5;
+                width: 100%;
+
+                h2 {
+                    font-size: 24px;
+                    margin: 0;
+                }
+
+                a img {
+                    width: 20px;
+                    height: 20px;
+                }
+            }
+
+            ul {
+                list-style: none;
+                font-size: 20px;
+                padding: 0;
+
+                li {
+                    margin-bottom: 22px;
+                    padding-bottom: 15px; // 텍스트와 border-bottom 사이의 여백
+                    border-bottom: 1px solid #c5c5c5;
+
+
+
+                    a {
+                        text-decoration: none;
+                        color: #333;
+
+                        &:hover {
+                            color: #353535;
+                            text-decoration: underline;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .ulive-section {
+        margin-top: 20px;
+        background-color: #ffffff;
+
+        .ulive-banner {
+            img {
+                width: 100%;
+            }
+        }
+
+        h2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .ulive-items {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr); // 한 줄에 4개의 ulive-item이 배치되도록 설정
+            gap: 20px;
+        }
+
+        .ulive-item {
+            background-color: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            box-sizing: border-box;
+
+            .img-wrapper {
+                position: relative;
+                width: 100%;
+                border-radius: 10px 10px 0 0;
+                
+                img {
+                  width: 100%;
+                  border-radius: 10px 10px 0 0;
+                }
+          
+                .play-icon {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 52px; // 재생 아이콘 크기 조절
+                  height: 52px;
+                  opacity: 0.8;
+                }
+              }
+
+            p {
+                margin: 5px 0;
+                font-size: 14px;
+                padding: 0 10px;
+
+                color: #333;
+            }
+
+            p:nth-child(2) {
+                font-weight: bold;
+                font-size: 16px;
+            }
+        }
+    }
+}
