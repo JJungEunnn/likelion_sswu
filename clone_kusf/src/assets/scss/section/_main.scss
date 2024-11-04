@@ -2,13 +2,16 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
-    padding: 20px;
-    width: 1580px;
+    padding: 30px;
     margin: 0 auto;
     background-color: #e7e7e7;
+    font-family: 'S-CoreDream-3Light';
 
     .banner-section {
         display: flex;
+        width: 1180px;
+        margin: 0 auto;
+        text-align: left;
         gap: 10px;
 
         .banner-item {
@@ -26,15 +29,24 @@
 
                 .overlay {
                     position: absolute;
-                    bottom: 0;
                     left: 0;
-                    right: 0;
-                    background: rgba(0, 0, 0, 0.5);
-                    color: #fff;
-                    padding: 10px;
-                    text-align: center;
+                    bottom: 0;
+                    z-index: 1;
+                    display: block;
+                    width: 100%;
+                    height: 62px;
+                    padding: 0 20px;
                     font-size: 16px;
-                    border-radius: 0 0 10px 10px;
+                    color: #fff;
+                    line-height: 3.8;
+                    box-sizing: border-box;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    word-wrap: normal;
+                    overflow: hidden;
+                    background: rgba(0, 0, 0, .5);
+                    text-align: center;
+                    border-radius: 0 0 12px 12px;
 
                     strong {
                         font-weight: bold;
@@ -46,8 +58,10 @@
 
     .content-section {
         display: flex;
-        width: 100%; // 화면 너비에 맞게 설정
-        gap: 20px; // notice-section과 news-section 사이의 간격
+        width: 100%;
+        height: auto;
+        padding-top: 50px;
+        overflow: hidden;
 
         .news-section {
             flex: 2; // 전체 너비의 2/3 정도를 차지하도록 설정
@@ -60,6 +74,7 @@
                 font-size: 24px;
                 margin-bottom: 15px;
                 font-weight: bold;
+                text-align: left;
             }
 
             .news-items {
@@ -74,12 +89,19 @@
                     overflow: hidden;
                     text-align: left;
                     box-sizing: border-box;
+                    cursor: pointer;
 
                     img {
                         width: 100%;
                         border-radius: 10px 10px 0 0;
                         max-height: 100%;
+                        transition: transform 0.3s ease;
+
+                        &:hover {
+                            transform: scale(1.1); // 이미지를 1.1배 확대
+                        }
                     }
+                    
 
                     p {
                         width: 100%;
@@ -87,6 +109,7 @@
                         padding: 5px;
                         font-size: 15px;
                         overflow: hidden;
+                        
                     }
                 }
             }
@@ -99,6 +122,7 @@
             margin-top: 65px;
             background: #fff;
             border-radius: 12px;
+            width: 900px;
 
             .notice-header {
                 display: flex;
@@ -112,6 +136,7 @@
                 h2 {
                     font-size: 24px;
                     margin: 0;
+                    text-align: left;
                 }
 
                 a img {
@@ -122,8 +147,8 @@
 
             ul {
                 list-style: none;
-                font-size: 20px;
                 padding: 0;
+                font-size: 14px;
 
                 li {
                     margin-bottom: 22px;
@@ -149,10 +174,12 @@
     .ulive-section {
         margin-top: 20px;
         background-color: #ffffff;
+        cursor: pointer;
 
         .ulive-banner {
             img {
                 width: 100%;
+                
             }
         }
 
@@ -160,6 +187,7 @@
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 20px;
+            text-align: left;
         }
 
         .ulive-items {
@@ -180,22 +208,28 @@
                 position: relative;
                 width: 100%;
                 border-radius: 10px 10px 0 0;
-                
+
                 img {
-                  width: 100%;
-                  border-radius: 10px 10px 0 0;
+                    width: 100%;
+                    border-radius: 10px 10px 0 0;
+
+                    transition: transform 0.3s ease;
+
+                        &:hover {
+                            transform: scale(1.1); // 이미지를 1.1배 확대
+                        }
                 }
-          
+
                 .play-icon {
-                  position: absolute;
-                  top: 50%;
-                  left: 50%;
-                  transform: translate(-50%, -50%);
-                  width: 52px; // 재생 아이콘 크기 조절
-                  height: 52px;
-                  opacity: 0.8;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    width: 52px; // 재생 아이콘 크기 조절
+                    height: 52px;
+                    opacity: 0.8;
                 }
-              }
+            }
 
             p {
                 margin: 5px 0;

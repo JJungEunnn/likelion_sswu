@@ -1,0 +1,90 @@
+.page02 {
+    text-align: center;
+
+    &__header {
+        position: relative; // 기준을 잡기 위해 relative 설정
+        text-align: center;
+        color: white;
+        margin-top: -20px; // header의 기본 margin 제거
+        padding: 0;
+
+        &-image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%; // 이미지의 정확한 중앙 위치로 설정
+        left: 50%;
+        transform: translate(-50%, -50%); // 중앙 정렬
+        color: #ffffff;
+        font-size: 50px;
+        font-weight: bold;
+        z-index: 100;
+        margin: 0;
+        text-align: center;
+        font-family: 'S-CoreDream-3Light';
+    }
+
+    &__subtitle {
+        position: absolute;
+        top: 65%; // 타이틀 아래쪽에 배치
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        color: white;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        margin: 0;
+        z-index: 100;
+        font-family: 'S-CoreDream-3Light';
+    }
+
+    &__title1 {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 35px;
+        display: inline-block; // 밑줄 길이를 텍스트에 맞추기 위해 사용
+        border-bottom: 2px solid #adadad; // 밑줄 설정 (색상과 두께 조정 가능)
+        padding-bottom: 5px;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 20px;
+        width: 50%; // 네비게이션의 길이를 80%로 설정 (필요에 따라 조정 가능)
+        margin: 0 auto; // 
+
+
+        &-item {
+            padding: 10px 20px;
+            font-weight: bold;
+            cursor: pointer;
+            border: 1px solid #ddd;
+            color: #333;
+            width: 80%; // 네비게이션의 길이를 80%로 설정 (필요에 따라 조정 가능)
+            margin: 0 auto; // 
+
+        }
+
+        &-item.active {
+            background-color: #0b2e59;
+            color: white;
+        }
+    }
+
+    &__image-container {
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+    }
+
+    &__organization-image {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ddd; // 이미지 경계선
+        border-radius: 8px; // 이미지 모서리 둥글게
+    }
+}

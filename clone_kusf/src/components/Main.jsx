@@ -1,9 +1,11 @@
 import React from 'react'
 import '../assets/scss/section/_main.scss'
+import Slider from '../components/Section/Slider';
 
 const Main = () => {
   return (
     <div>
+      <Slider />
       <main className="main-container">
         {/* 배너 슬라이드 섹션 */}
         <div className="banner-section">

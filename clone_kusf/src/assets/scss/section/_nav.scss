@@ -1,0 +1,44 @@
+.nav {
+    background-color: #0b2e59; // 네비게이션 바 배경색
+    padding: 10px 0;
+  
+    &__list {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      height: 70px;
+    }
+  
+    &__item {
+      margin: 20px;
+    }
+  
+    &__link {
+      color: #cccccc;
+      text-decoration: none;
+      font-size: 16px;
+      padding: 10px 0;
+      position: relative;
+  
+      &.active {
+        color: #ffffff;
+      }
+  
+      &.active::after {
+        content: "";
+        position: absolute;
+        bottom: 45px; // 링크 아래에 하얀색 밑줄
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: #ffffff;
+      }
+  
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+  

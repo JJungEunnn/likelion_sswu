@@ -1,0 +1,110 @@
+.page01 {
+    @font-face {
+        font-family: 'S-CoreDream-3Light';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+
+    &__header {
+        position: relative; // 기준을 잡기 위해 relative 설정
+        text-align: center;
+        color: white;
+        margin: 0; // header의 기본 margin 제거
+        padding: 0;
+
+        &-image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%; // 이미지의 정확한 중앙 위치로 설정
+        left: 50%;
+        transform: translate(-50%, -50%); // 중앙 정렬
+        color: #ffffff;
+        font-size: 50px;
+        font-weight: bold;
+        z-index: 100;
+        margin: 0;
+        text-align: center;
+        font-family: 'S-CoreDream-3Light';
+    }
+
+    &__subtitle {
+        position: absolute;
+        top: 65%; // 타이틀 아래쪽에 배치
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        color: white;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        margin: 0;
+        z-index: 100;
+    }
+
+    &__content {
+        padding: 20px;
+        font-family: 'S-CoreDream-3Light';
+    }
+
+    &__greeting {
+         h2 {
+      text-align: center;
+      font-size: 34px;
+    }
+
+    &__title-underline {
+      display: inline-block;
+      border-bottom: 2px solid #a7a7a7; // 밑줄 색상과 두께 설정
+      padding-bottom: 3px; // 텍스트와 밑줄 사이 간격
+    }
+
+        &-box {
+            display: flex;
+            justify-content: center; // 가로 방향 중앙 정렬
+            align-items: center; // 세로 방향 중앙 정렬
+            height: 400px; // 필요에 따라 높이 지정
+        }
+    }
+
+    &__president-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    &__description {
+        margin-top: 20px;
+        line-height: 1.6;
+        color: #333;
+        width: 100%;
+        padding: 45px, 0, 0, 45px;
+    }
+
+    &__description01 {
+        margin-top: 20px;
+        text-align: right;
+        color: #333;
+        width: 100%;
+        padding: 45px, 0, 0, 45px;
+    }
+
+    &__description02 {
+        text-align: right;
+        margin-top: -10px;
+        line-height: 1.1;
+        color: #333;
+        width: 100%;
+        font-weight: bold;
+        font-size: 40px;
+        padding: 45px, 0, 0, 45px;
+    }
+}
+
+.nav {
+    margin-top: -5px; // Nav의 기본 margin 제거
+    padding: 0; // Nav의 기본 padding 제거
+    width: 100%;
+}

@@ -1,0 +1,91 @@
+.page03 {
+    @font-face {
+        font-family: 'S-CoreDream-3Light';
+        src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+        font-weight: normal;
+        font-style: normal;
+    }
+    &__header {
+        position: relative; // 기준을 잡기 위해 relative 설정
+        text-align: center;
+        color: white;
+        margin: 0; // header의 기본 margin 제거
+        padding: 0;
+
+        &-image {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__title {
+        position: absolute;
+        top: 50%; // 이미지의 정확한 중앙 위치로 설정
+        left: 50%;
+        transform: translate(-50%, -50%); // 중앙 정렬
+        color: #ffffff;
+        font-size: 50px;
+        font-weight: bold;
+        z-index: 100;
+        margin: 0;
+        text-align: center;
+        font-family: 'S-CoreDream-3Light';
+    }
+
+    &__subtitle {
+        position: absolute;
+        top: 65%; // 타이틀 아래쪽에 배치
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 1rem;
+        color: white;
+        text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+        margin: 0;
+        z-index: 100;
+    }
+
+
+
+    a {
+        color: #0073e6;
+        text-decoration: none;
+        font-size: 1rem;
+
+        &:hover {
+            color: #005bb5;
+        }
+    }
+}
+
+h2{
+    text-align: center;
+    font-family: 'S-CoreDream-3Light';
+}
+.page03__info {
+    display: flex;
+    align-items: center;
+    gap: 20px; // 이미지와 텍스트 사이의 간격 조절
+    padding: 20px;
+    font-size: 1rem;
+    color: #333;
+    margin-left: 60px;
+    margin-right: 60px;
+    font-family: 'S-CoreDream-3Light';
+
+    &__img {
+        width: 100px; // 이미지 크기 조절
+        height: auto;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+        color: #353535;
+        margin-bottom: 10px;
+        font-weight: 600;
+    }
+
+    p {
+        margin: 5px 0;
+        font-size: 16px;
+    }
+}
